@@ -1,22 +1,30 @@
-var rain = $('#rain');
-var wind = $('#wind');
-var temp = $('#temp');
-
-
-var responseText = document.getElementById('Weather');
-
-var APIKey = 'a8YgP4C0Q8FBzLTMOoG2LGs8GVCIQlwB';
-
-function HourlyWeather() {
-var WeatherCard = 'http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/31520?apikey=a8YgP4C0Q8FBzLTMOoG2LGs8GVCIQlwB';
-
-fetch(WeatherCard)
-.then(function (responce) {
-    return responce.json();
-})
-.then(function (data) {
-    console.log(data);
-})
+var cityTodayEl = $('#city-today-date');
+var tempEl = $('#min-max-temp');
+var cloudEl = $('#cloud');
+var windEl = $('#wind');
+var rainEl = $('#rain');
+// apiKey for AccuWeather--- YOSJw3FBcGAfIUXhxeAGoN9WeUG2Egyw
+function getLocKey(event) {
+    
+    var locKeyUrl = 'http://dataservice.accuweather.com/locations/v1/search?q=31520&apikey=YOSJw3FBcGAfIUXhxeAGoN9WeUG2Egyw';
+    fetch(locKeyUrl)
+    
+    .then(function (response) {
+        console.log(response)
+    })
 }
 
-HourlyWeather()
+getLocKey();
+
+
+
+
+
+
+
+
+
+// var checkEl = $('.manna-pic-one').click(check)
+// function check () {
+//     alert('clicked')
+// }
