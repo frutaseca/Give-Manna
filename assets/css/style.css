@@ -173,9 +173,12 @@ p {
     text-align: left;
 }
 
-@media screen and (max-width: 800px) {
-    .manna-pic {
-        margin-left: 500px;
-    }
+@media screen and (max-width: 768px) {
+img {
+max-width: 600px;
 }
+  }
 
+@media screen and (max-width: 576px) {
+
+}

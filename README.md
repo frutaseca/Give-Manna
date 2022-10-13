@@ -17,5 +17,3 @@ Lucas Marques<br>
 
 ## Screenshot of Webpage
 
-## License
-MIT Licnese
