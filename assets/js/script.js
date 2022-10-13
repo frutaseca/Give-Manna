@@ -1,3 +1,11 @@
+  
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
+
+
 var cityTodayEl = $('#city-today-date');
 var tempEl = $('#min-max-temp');
 var dayEl = $('#day');

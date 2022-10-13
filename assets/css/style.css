@@ -1,33 +1,71 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Cloister Black";
-    src: url(./CloisterBlackLight-axjg.ttf);
-    background-color:white;
     background-image: linear-gradient(90deg, rgba(200,0,0,.5) 50%, transparent 50%),
     linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%);
     background-size:50px 50px;
 }
 
+h4 {
+    font-family: "Cloister Black";
+    src: url(./CloisterBlackLight-axjg.ttf);
+    background-color:white;
+}
+
+.weather{
+    display:flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    color:white;
+}
+#goldleaf-one img {
+    height: auto;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+#goldleaf-two img {
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
 .banner {
+    padding: 0;
+    background: black;
+}
+.banner h1 {
+    font-family: "Cloister Black";
+    src: url(./CloisterBlackLight-axjg.ttf);
+    background-color:white;
     text-align: center;
     color: white;
     font-size: 72px;
     background-color:black;
     padding: 35px; 
-    margin: auto;
+    margin-left: 150px;
+    margin-top: 0;
 }
 
 a {
     color: white;
     text-decoration: none;
 }
+
+a:visited {
+    color:goldenrod;
+}
+
+
 aside {
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(190, 51, 51);
     color: white;
-    font-size: 24px;
-    width: 125px;
+    font-size: 20px;
+    width: 155px;
     height: 100%;
     top: 0;
     left: 0;
@@ -36,6 +74,9 @@ aside {
 }
 
 section {
+    border-style: solid;
+    border-color: gold;
+    border-width: thick;
     font-family: 'Times New Roman', Times, serif;
     background-color: black;
     color: white;
@@ -46,25 +87,95 @@ section {
     padding: 50px;
     max-width: 75%;
 }
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-image-wrapper {
+    height: auto;
+    width: 90%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-image-wrapper img {
+    width: 100%;
+}
+.manna-pic-rose img {
+    position:fixed;
+    border: none;
+    margin-left:0;
+    margin-top:0;
+    display: flex;
+    max-width: 120px;
+    height: auto;
+}
 
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.manna-pic-one img {
-    -webkit-box-shadow:0 1px 4px rgba(0,0,0,0.3);
-    -moz-box-shadow:0 1px 4px rgba(0,0,0,0.3);
-    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+#manna-pic-one img {
     margin-left: auto;
     margin-right: auto;
-    display: flex;
     max-width: 750px;
+    height: auto;
+}
+
+#manna-pic-two img {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 750px;
+    height: auto;
+}
+
+#manna-pic-three {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 850px;
     height: auto;
     padding: 50px;
 }
 
-.manna-pic-two img {
+#manna-pic-four {
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    max-width: 750px;
+    max-width: 850px;
     height: auto;
     padding: 50px;
 }
+
+#manna-pic-five {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 975px;
+    height: auto;
+    padding: 50px;
+}
+
+.btn {
+    font-family: 'Times New Roman', Times, serif;
+    position: static;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+p {
+    font-family:'Times New Roman', Times, serif;
+}
+
+.message {
+    text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+    .manna-pic {
+        margin-left: 500px;
+    }
+}
+
