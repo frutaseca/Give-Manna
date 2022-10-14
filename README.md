@@ -1,7 +1,7 @@
 # Give Manna
 
 ## What is Give Manna
-
+We are Give Manna, we are a community based organization that supports Non-Profit Church Organizations.
 
 ## Contributors
 Ava Blake<br>
