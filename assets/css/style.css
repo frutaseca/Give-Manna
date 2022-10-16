@@ -8,7 +8,7 @@ body {
 }
 
 h4 {
-    font-family: "SilianRail";
+    font-family: "The Centurion";
     src: url(./TheCenturion.ttf);
     background: linear-gradient(to bottom, 
     #cfc09f 22%,#634f2c 24%,#cfc09f 26%,
@@ -35,14 +35,24 @@ h4:after {
         -5px -5px 10px rgba(0, 0, 0, 0.4);      
 } 
 
-.weather{
-    display:flex;
+.weather {
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 10rem;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1rem;
     background-color: black;
-    color:white;
+    color: white;
+    border-color: #e1ba64;
+    border-style: solid;
+    border-width: thick;
+    background: radial-gradient(ellipse at center, #484137 0%, #000000 100%);
+    box-shadow: 15px 10px rgba(0, 0, 0, 0.501);
+    line-height: 2rem;
 }
+
 #goldleaf-one img {
     height: auto;
     max-width: 750px;
