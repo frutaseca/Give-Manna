@@ -10,38 +10,32 @@
     </head>
     <body>
         <div class="page">
-            <div class="sidebar-wrapper">
+            <div class ="column"><img src="./assets/column-edited-two.png"></div> 
+            <div class="sidebar-wrapper">  
                 <nav class="sidebar">
                     <div class="manna-pic-rose">
                         <img src="./assets/lutheran-rose.png"/>
                     </div>
-                    <a href ="#about-me">About Me</a>
-                    <a href ="#volunteer-info">Volunteer</a>
-                    <a href ="./products.html">Donations</a>
-                </nav>
+                    <a href="#about-us">About Us</a>
+                    <a href="#text-box">Volunteer</a>
+                    <a href="./products.html">Donations</a> 
+                    <a href="./bible.html">Bible</a> 
+                </nav>    
             </div>
+            <div class="picnic-basket"></div>
             <main class="page-content">
                 <header class = "header-wrapper">
-                    <div id="banner">  
-                        <h1><span>✞Give Manna✞</span></h1> 
+                    <div class ="banner" id="banner">  
+                        <h1>🕊️<span>✞Give Manna✞</span>🕊️</h1> 
                     </div>
-                </header>
-                <aside>
-                    <div class="weather">
-                        <h5 id="city-today-date"></h5>
-                        <h5 id="weather-text"></h5>
-                        <div id="min-max-temp"></div>
-                        <div id="day"></div>
-                        <div id="night"></div>
-                    </div>
-                </aside>    
+                </header>   
                 <br />
                 <br />
                 <section>
-                    <p>"It’s something that began back in September of 1983 when the sitting mayor, Reggie Holtzendorf,
+                    <p>🧔🏾🙌🏽🌤️"It’s something that began back in September of 1983 when the sitting mayor, Reggie Holtzendorf,
                     approached a number of area ministers from across the community, including the Rev. Jim Crandall and
                     the Rev. Buzz Yarborough. They collectively founded the mission, with the support of the city, as a
-                    way to aid the homeless and needy population in the downtown area. "</p>
+                    way to aid the homeless and needy population in the downtown area. "🌤️🙌🏽🧔🏾</p>
                 </section>
                 <br />
                 <br />
@@ -51,10 +45,10 @@
                 <br />
                 <br />
                 <section>
-                    <p>
-                    Manna House is a soup kitchen located in Brunswick that is supported by volunteers, who serve thousands of 
+                    <p id="about-us">
+                        🍞Manna House is a soup kitchen located in Brunswick that is supported by volunteers, who serve thousands of 
                     free meals per month. St. James Lutheran Church members have committed themselves to serving at Manna House on
-                    the third tuesday of every month, and everyone is invited to join us in this fun and meaningful area of service.
+                    the third tuesday of every month, and everyone is invited to join us in this fun and meaningful area of service.🍞
                     </p>
                 </section>
                 <br />
@@ -71,6 +65,15 @@
                 <div id="manna-pic-five" class="manna-pic">
                     <img src="./assets/kitchen-3.jpg"/>
                 </div>
+                <aside>
+                    <div class="weather">
+                        <h5 id="city-today-date"></h5>
+                        <div id="weather-text"></div>
+                        <div id="min-max-temp"></div>
+                        <div id="day"></div>
+                        <div id="night"></div>
+                    </div>
+                </aside>
                 <button data-target="modal1" class="btn modal-trigger">🥪†Volunteering Information†🥪</button>
                 <div id="modal1" class="modal">
                     <div class="modal-content">
@@ -79,17 +82,18 @@
                             You can find Manna House of Brunswick at 1408 G St. in Brunswick, Georgia 31520.</p>
                     </div>
                     <div class="modal-footer">
-                     <!-- <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a> -->    
-                    </div>
+                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>     
+                    </div> 
                 </div>
-                <section class = "text-box">
-                    <h2><span>Contact Us</span><h2>
+                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-81.4929074048996%2C31.151390707431283%2C-81.4858263731003%2C31.155586685651432&amp;layer=mapnik&amp;marker=31.1534887197612%2C-81.48936688899994" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=31.15349&amp;mlon=-81.48937#map=18/31.15349/-81.48937">View Larger Map</a></small>
+                <section class = "text-box" id="text-box">
+                    <h2>🕊️📜<span>Contact Us</span>📜🕊️<h2>
                 </section>
                 <section>
                     <div class = "container">
                     <div class = "row">
                         <div class="col s12 m8 offset-m2 offset-13 17 offset-x14 x16">
-                            <form method="POST" action="">
+                            <form method="POST" action="https://formsubmit.co/mannahouse@protonmail.com">
                                 <div class="row">
                                     <div class ="input-field col s12">
                                         <input
@@ -108,7 +112,7 @@
                                             name="email"
                                             placeholder="your@email.com"
                                             id="full_name"
-                                            type="text"
+                                            type="email"
                                             class="validate"
                                             required
                                         />
@@ -122,15 +126,15 @@
                                             name="message"
                                             id="message"
                                             class="materialize-textarea validate"
-                                            placeholder="Please enter your volunteering information or any questions.">
-                                        </textarea>
+                                            placeholder="Please enter your volunteering information."
+                                       ></textarea>
                                         <label for="message">Message</label> 
                                     </div>       
                                 </div>
     
                                 <div class="row">
                                     <div class="col s12">
-                                        <button type="submit" class="btn waves-effect waves-light">
+                                        <button type="submit" id=contact-us class="btn waves-effect waves-light">
                                             †Contact Us†
                                         </button>
                                     </div>    
@@ -141,8 +145,8 @@
                     </div>    
                 </section>   
                 <section>  
-                    John 6:58 This is the bread that came down from heaven. Your ancestors ate manna and died, but whoever feeds on
-                    this bread will live forever.
+                    🙏🏽John 6:58 This is the bread that came down from heaven. Your ancestors ate manna and died, but whoever feeds on
+                    this bread will live forever.🙏🏽
                 </section>
                 <br />
                 <br />  
@@ -153,5 +157,8 @@
         <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>  
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script type="text/javascript" src="./assets/js/script.js"></script>                  
+    <footer>
+        <p>Made with ❤️ by Ava Blake Design</p>
+    </footer>
     </body>
 </html>

@@ -7,33 +7,37 @@
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link type="text/css" rel="stylesheet" href="./assets/css/style.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script defer type="text/javascript" src="./assets/js/script.js"></script> 
-    <script defer type="text/javascript" src="./assets/js/products.js"></script>
     <title>Donate Products</title>
 </head>
     <body>
         <div class="page">
+                <div class="column"><img src="./assets/column-edited-two.png"></div>
                 <div class="sidebar-wrapper">
                     <nav class="sidebar">
                         <div class="manna-pic-rose">
                             <img src="./assets/lutheran-rose.png"/>
                         </div>
-                        <a href ="#about-me">About Me</a>
-                        <a href ="#volunteer-info">Volunteer</a>
+                        <a href ="./index.html#about-us">About Us</a>
+                        <a href ="./index.html#contact-us">Volunteer</a>
                         <a href ="./index.html">Home</a>
+                        <a href ="./bible.html">Bible</a>
                     </nav>
                 </div>
+                <div class = "picnic-basket"></div>
                 <main id="products-container" class="page-content products-container">
                     <header class = "header-wrapper">
-                        <div id="banner">  
-                            <h1><span>✞Give Manna✞</span></h1> 
+                        <div class="banner" id="banner">  
+                            <h1>🕊️<span>✞Give Manna✞</span>🕊️</h1> 
                         </div>
                     </header>
-                    <section>
+                    <section class = donations>
+                        <h2>🙏🏾<span>Donations</span>🙏🏾</h2>
+                        <p>Below is a list of food items we are seeking at the Manna House of Brunswick. Bring them with you when you volunteer on the third Tuesday of the Month. For more information see the Volunteering Information section of our homepage.</p>
+                        <hr>
                         <div id="wonder-bread" class="product">
                             <div class = "product-header">
                                 <div>
-                                    <h3>Wonder Bread</h3>
+                                    <h3>🍞<span>Wonder Bread</span>🍞</h3>
                                 </div>    
                                 <div>
                                     <p>Price:<span class="product-price"></span></p>
@@ -41,6 +45,9 @@
                             </div>
                             <div class = "product-image-wrapper">
                                 <img class="product-image">    
+                            </div>
+                            <div>
+                                    <p>Bread to make Peanut and Butter and Jelly Sandwiches and Ham and Cheese Sandwiches for those in need.</p>
                             </div>
                         </div>
                     </section>
@@ -48,7 +55,7 @@
                         <div id="american-cheese" class="product">
                             <div class = "product-header">
                                 <div>
-                                    <h3>American Cheese</h3>
+                                    <h3>🧀<span>Sliced American Cheese</span>🧀</h3>
                                 </div>    
                                 <div>
                                     <p>Price:<span class="product-price"></span></p>
@@ -58,8 +65,15 @@
                                 <img class="product-image">    
                             </div>
                         </div>
+                        <div>
+                            <p>Cheese to make Ham and Cheese Sandwiches for those in need.</p>
+                        </div>
                     </section>
                 </main>    
-            </div>    
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+        <script defer type="text/javascript" src="./assets/js/script.js"></script> 
+        <script defer type="text/javascript" src="./assets/js/products.js"></script>  
     </body>
 </html>
