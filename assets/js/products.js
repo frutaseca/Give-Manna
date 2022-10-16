@@ -31,13 +31,24 @@ async function getProduct(id) {
   */
 
   async function renderProducts() {
-    let wonderBread = await getProduct("37858875")
-    let cheese = await getProduct("10452377")
-    let ham = await getProduct("10315957")
-    let pb = await getProduct("10315475")
-    let jelly = await getProduct("364924551")
-    let sjelly = await getProduct("10315473")
-    let productsArray = [wonderBread, cheese, ham, pb, jelly, sjelly]
+    let wonderBread = null;
+    let cheese = null;
+    let productsArray = []
+    const cachedProducts = localStorage.getItem("cachedProducts");
+    if (cachedProducts) {
+        let savedProducts = JSON.parse(cachedProducts);
+        productsArray = savedProducts.productsArray;
+    }
+    else {  
+      wonderBread = await getProduct("37858875");
+      cheese = await getProduct("10452377");
+      productsArray = [wonderBread, cheese]
+      let productsObj = {
+        productsArray : productsArray
+      }
+      let productsStringFormat = JSON.stringify(productsObj);
+      localStorage.setItem("cachedProducts", productsStringFormat)
+    }  
     console.log(productsArray);
     Array.from(productsSections).forEach((element, i) => {
         productPrices[i].textContent = `$${productsArray[i].price}`
