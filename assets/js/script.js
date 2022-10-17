@@ -37,16 +37,3 @@ function getDailyWeather() {
         })
 }
 getDailyWeather();
-
-
-
-
-
-
-
-
-
-// var checkEl = $('.manna-pic-one').click(check)
-// function check () {
-//     alert('clicked')
-// }
