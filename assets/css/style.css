@@ -452,6 +452,9 @@ footer p {
 }
 
 @media screen and (max-width: 414px) {
+    .donations h2 span {
+        font-size: 24px;
+    }
     .bible {
         padding: 20px;
     } 
@@ -508,9 +511,4 @@ footer p {
     picnic-basket {
         display: none;
     }
-}
-  }
-
-@media screen and (max-width: 576px) {
-
 }
