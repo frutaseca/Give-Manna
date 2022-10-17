@@ -33,6 +33,10 @@ async function getProduct(id) {
   async function renderProducts() {
     let wonderBread = null;
     let cheese = null;
+    let ham = null;
+    let pb = null;
+    let jelly = null;
+    let sjelly = null;
     let productsArray = []
     const cachedProducts = localStorage.getItem("cachedProducts");
     if (cachedProducts) {
@@ -42,7 +46,11 @@ async function getProduct(id) {
     else {  
       wonderBread = await getProduct("37858875");
       cheese = await getProduct("10452377");
-      productsArray = [wonderBread, cheese]
+      ham = await getProduct("10315957")
+      pb = await getProduct("10315475")
+      jelly = await getProduct("364924551")
+      sjelly = await getProduct("10315473")
+      productsArray = [wonderBread, cheese, ham, pb, jelly, sjelly]
       let productsObj = {
         productsArray : productsArray
       }
