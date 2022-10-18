@@ -19,7 +19,7 @@ SO THAT I can submit my name, check the weather, and sign up to donate food
 ```
 GIVEN a website from Give Manna
 WHEN I access the web page
-THEN I am presented with the organization's information<br>
+THEN I am presented with the organization's information
 WHEN I scroll down
 THEN I am presented with today's weather, a map for the church's location, and a form to input my information
 WHEN I click on the donation link located on the navigation bar
