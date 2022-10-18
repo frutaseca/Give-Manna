@@ -10,9 +10,12 @@
     </head>
     <body>
         <div class="page">
+            <!--This is an image of the column which is to the right of the page-->
             <div class ="column"><img src="./assets/images/column-edited-two.png"></div> 
+            <!--This wrapper formats the sidebar-->
             <div class="sidebar-wrapper">  
                 <nav class="sidebar">
+                    <!--This is an image of the Lutheran Rose to the left, beneath are the sidebar links-->
                     <div class="manna-pic-rose">
                         <img src="./assets/images/lutheran-rose.png"/>
                     </div>
@@ -22,6 +25,7 @@
                     <a href="./bible.html">Bible</a> 
                 </nav>    
             </div>
+            <!--This is the picnic basket styled divider that is next to the sidebar-->
             <div class="picnic-basket"></div>
             <main class="page-content">
                 <header class = "header-wrapper">
@@ -31,6 +35,7 @@
                 </header>   
                 <br />
                 <br />
+                <!--The sections all hold text about the 501c3 non-profit-->
                 <section>
                     <p>🧔🏾🙌🏽🌤️"It’s something that began back in September of 1983 when the sitting mayor, Reggie Holtzendorf,
                     approached a number of area ministers from across the community, including the Rev. Jim Crandall and
@@ -53,6 +58,7 @@
                 </section>
                 <br />
                 <br />
+                <!--Below is a bunch of pictures of Manna House of Brunswick-->
                 <div id="manna-pic-two" class="manna-pic">
                     <img src="./assets/images/manna-2.jpeg"/>
                 </div>
@@ -65,6 +71,7 @@
                 <div id="manna-pic-five" class="manna-pic">
                     <img src="./assets/images/kitchen-3.jpg"/>
                 </div>
+                <!--This is the weather app, where it will display local weather so that those in need can know if its okay to get food.-->
                 <aside>
                     <div class="weather">
                         <h5 id="city-today-date"></h5>
@@ -77,16 +84,21 @@
                 <button data-target="modal1" class="btn modal-trigger">🥪†Volunteering Information†🥪</button>
                 <div id="modal1" class="modal">
                     <div class="modal-content">
+                        <!--This is where the volunteering information is held click and it appears on screen.-->
                         <h4>Volunteering Information</h4>
                         <p> Volunteer hours with the St.James Lutheran Church are the third tuesday of every month from 11:30am - 1pm.
                             You can find Manna House of Brunswick at 1408 G St. in Brunswick, Georgia 31520.</p>
                     </div>
+                    <!--This is the close button on the modal-->
                     <div class="modal-footer">
                         <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>     
                     </div> 
                 </div>
-                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-81.4929074048996%2C31.151390707431283%2C-81.4858263731003%2C31.155586685651432&amp;layer=mapnik&amp;marker=31.1534887197612%2C-81.48936688899994" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=31.15349&amp;mlon=-81.48937#map=18/31.15349/-81.48937">View Larger Map</a></small>
+                <div class="map">
+                    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-81.4929074048996%2C31.151390707431283%2C-81.4858263731003%2C31.155586685651432&amp;layer=mapnik&amp;marker=31.1534887197612%2C-81.48936688899994" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=31.15349&amp;mlon=-81.48937#map=18/31.15349/-81.48937">View Larger Map</a></small>
+                </div>
                 <section class = "text-box" id="text-box">
+                    <!--Below is the contact us section, you can enter information to communicate with the non-profit.-->
                     <h2>🕊️📜<span>Contact Us</span>📜🕊️<h2>
                 </section>
                 <section>
@@ -143,7 +155,8 @@
                         </div>
                     </div>
                     </div>    
-                </section>   
+                </section>
+                <!--Below is a prayer to explain what manna is-->   
                 <section>  
                     🙏🏽John 6:58 This is the bread that came down from heaven. Your ancestors ate manna and died, but whoever feeds on
                     this bread will live forever.🙏🏽
@@ -153,6 +166,7 @@
             </main>
             
         </div>
+        <!--Below is the jquery, moment.js, materialize and javascript scripts-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
         <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>  
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
