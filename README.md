@@ -9,18 +9,22 @@ We have learned how to use different APIs rather than ones previously learned, w
 Some future improvements to the site that we want to put are adding forms for users to put food that they would like to see being given out and a place to simply order it from the website.
 
 ## User Story
-AS A volunteer<br>
-I WANT to go on the church's nonprofit website<br>
-SO THAT I can submit my name, check the weather, and sign up to donate food<br>
+```
+AS A volunteer
+I WANT to go on the church's nonprofit website
+SO THAT I can submit my name, check the weather, and sign up to donate food
+```
 
 ## Acceptance Criteria
-GIVEN a website from Give Manna<br>
-WHEN I access the web page<br>
-THEN I am presented with the organization's information<br>
-WHEN I scroll down<br>
-THEN I am presented with today's weather, a map for the church's location, and a form to input my information<br>
-WHEN I click on the donation link located on the navigation bar<br>
-THEN I can see what food is being used so I can donate said food<br>
+```
+GIVEN a website from Give Manna
+WHEN I access the web page
+THEN I am presented with the organization's information
+WHEN I scroll down
+THEN I am presented with today's weather, a map for the church's location, and a form to input my information
+WHEN I click on the donation link located on the navigation bar
+THEN I can see what food is being used so I can donate said food
+```
 
 ## Contributors
 Ava Blake<br>
@@ -32,7 +36,7 @@ Brandon Rodriguez<br>
 **BlueCartAPI-** BlueCart API is the real-time Walmart Product Data API you've been looking for.
 
 ## Link to live Webpage
-
+https://frutaseca.github.io/Give-Manna/
 ## Screenshot of Webpage
 ![Screenshot of Website](./assets/images/screenshot-1.png)
 ![Screenshot of Website](./assets/images/screenshot-2.png)
