@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Here is the styles sheets of the page, we use the materialize framework.-->
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link type="text/css" rel="stylesheet" href="./assets/css/style.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -11,7 +12,9 @@
 </head>
     <body>
         <div class="page">
+                <!--This is the column that stays to the right side of the page-->
                 <div class="column"><img src="./assets/images/column-edited-two.png"></div>
+                <!--This is the sidebar wrapper that formats the sidebar-->
                 <div class="sidebar-wrapper">
                     <nav class="sidebar">
                         <div class="manna-pic-rose">
@@ -23,6 +26,7 @@
                         <a href ="./bible.html">Bible</a>
                     </nav>
                 </div>
+                <!--This si the picnic basket divider to the left of the page-->
                 <div class = "picnic-basket"></div>
                 <main id="products-container" class="page-content products-container">
                     <header class = "header-wrapper">
@@ -30,6 +34,7 @@
                             <h1>🕊️<span>✞Give Manna✞</span>🕊️</h1> 
                         </div>
                     </header>
+                    <!--This is the donations section where those who want to help can know what items to buy for the Manna House-->
                     <section class = donations>
                         <h2>🙏🏾<span>Donations</span>🙏🏾</h2>
                         <p>Below is a list of food items we are seeking at the Manna House of Brunswick. Bring them with you when you volunteer on the third Tuesday of the Month. For more information see the Volunteering Information section of our homepage.</p>
@@ -40,9 +45,11 @@
                                     <h3>🍞<span>Wonder Bread</span>🍞</h3>
                                 </div>    
                                 <div>
+                                    <!--This displays the price dynamically.-->
                                     <p>Price:<span class="product-price"></span></p>
                                 </div>
                             </div>
+                            <!-- This displays the image dynamically-->
                             <div class = "product-image-wrapper">
                                 <img class="product-image">    
                             </div>
@@ -131,6 +138,7 @@
                     </section>
                 </main>    
         </div>
+        <!--Here is a list of scripts used, jquery, moment.js, and two javascript files-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
         <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
         <script defer type="text/javascript" src="./assets/js/script.js"></script> 
